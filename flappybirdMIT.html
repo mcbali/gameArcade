@@ -1,0 +1,58 @@
+<!--
+  Flappy Bird Game
+  Adapted from code by Author: assebc on GitHub
+  GitHub Repository: https://github.com/assebc/flappy-bird/tree/main/assets
+  Licensed under the MIT License
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/flappy-bird.png" >
+    <link rel="stylesheet" href="flappybirdMIT.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Flappy Bird</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href = "home.html">GAME ARCADE</a></li>
+            <li onclick=showSideBar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class = "sidebar">
+            <li onclick=closeSideBar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href = "#"></a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "controls.html">Controls</a></li>
+            <li><a href = "tic-tac-toe.html">Tic-Tac-Toe</a></li>
+            <li><a href = "memoryMatch.html">Memory Match</a></li>
+            <li><a href = "snake.html">Snake</a></li>
+            <li><a href = "flappybirdMIT.html">Flappy Bird</a></li>
+    </nav>
+
+    <div class="gameContainer">
+        <h2>FLAPPY BIRD</h2>
+        <div id="end-menu">
+            <h1>Game over!</h1>
+            <p> Score: <span id="end-score"></span></p>
+            <p> Best: <span id="best-score"></span></p>
+            <button id="restart-button">Restart</button>
+        </div>
+        <div id="game-container">
+            <canvas id="game-canvas" width="400" height="600"></canvas>
+            <div id="score-display">SCORE: 0</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mc Rhigor Balingit</p>
+        <p>Flappy Bird code adapted from code by assebc. Licensed under the MIT License.</p>
+    </footer>
+
+    <script src="flappybirdMIT.js"></script>
+    <script src = "navigation.js"></script>
+</body>
+</html>

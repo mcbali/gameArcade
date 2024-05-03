@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match</title>
+    <link rel="stylesheet" href="memory.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href = "home.html">GAME ARCADE</a></li>
+            <li onclick=showSideBar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class = "sidebar">
+            <li onclick=closeSideBar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href = "#"></a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "controls.html">Controls</a></li>
+            <li><a href = "tic-tac-toe.html">Tic-Tac-Toe</a></li>
+            <li><a href = "memoryMatch.html">Memory Match</a></li>
+            <li><a href = "snake.html">Snake</a></li>
+            <li><a href = "flappybirdMIT.html">Flappy Bird</a></li>
+    </nav>
+    
+    <div class="gameContainer">
+        <h2>MEMORY MATCH</h2>
+        <div id="difficultySelection">
+            <label>Level:</label>
+            <input type="radio" name="difficulty" id="easy" value="easy"> Easy
+            <input type="radio" name="difficulty" id="medium" value="medium"> Medium
+            <input type="radio" name="difficulty" id="hard" value="hard" checked> Hard
+        </div>
+        <div class="board">
+            <!-- 16 cells for game-->
+            <button class = "cell" data-cell-index = "0"></button>
+            <button class = "cell" data-cell-index = "1"></button>
+            <button class = "cell" data-cell-index = "2"></button>                
+            <button class = "cell" data-cell-index = "3"></button>                    
+            <button class = "cell" data-cell-index = "4"></button>
+            <button class = "cell" data-cell-index = "5"></button>
+            <button class = "cell" data-cell-index = "6"></button>
+            <button class = "cell" data-cell-index = "7"></button>
+            <button class = "cell" data-cell-index = "8"></button>                
+            <button class = "cell" data-cell-index = "9"></button>                    
+            <button class = "cell" data-cell-index = "10"></button>
+            <button class = "cell" data-cell-index = "11"></button>
+            <button class = "cell" data-cell-index = "12"></button>
+            <button class = "cell" data-cell-index = "13"></button>
+            <button class = "cell" data-cell-index = "14"></button>                    
+            <button class = "cell" data-cell-index = "15"></button>
+        </div>
+        <label id = "turnLabel">Number of Turns: 0</label>
+        <div id = "timer"> Timer: 00:00:00 </div>
+        <button id="restartButton" onclick="restartGame()">RESTART GAME</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mc Rhigor Balingit</p>
+    </footer>
+
+    <script src="navigation.js"></script>
+    <script src="memory.js"></script>
+</body>
+</html>

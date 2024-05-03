@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1541474583361-bc9527eb46d6?q=80&w=2657&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+nav li{
+    height: 77px; /* same height as home page header */
+    min-width: 200px;
+}
+nav a{
+    display: flex;
+    height: 100%;
+    padding: 0 60px;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    color: black;
+    font-family: "press start 2p", sans-serif;
+    font-size: larger;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%);
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: lightgray;
+    backdrop-filter: blur(25px);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 40%;
+}
+footer {
+    min-height: 180px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px; 
+}
+
+
+/* game css */
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 170, 0);
+    max-width: 500px;
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+.board{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-height: 450px;
+    max-width: 450px;
+}
+.cell {
+    background-color: white;
+    border: 2px solid #333;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Set a fixed height for better visual */
+    width: 100px;
+    color: #444; /* Default text color */
+    margin: 0 auto;
+    border-width: 0;
+    transform: rotateY(360deg);
+    transition: 0.25s;
+}
+.cell.cellOpen{
+    transform: rotateY(0deg);
+}
+.cellOpen::after{
+    transform: rotateY(180deg);
+}
+.cell:hover {
+    background-color: #eaeaea; /* Hover effect for cells */
+}
+#turnLabel {
+    font-family: monospace;
+}
+#restartButton{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border-width: 0;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "press start 2p";
+}
+#restartButton:hover{
+    background-color: #eaeaea
+}
+h2{
+    color: white;
+    margin-top: 20px;
+    font-family: "press start 2p";
+}
+#difficultySelection{
+    font-family: monospace;
+}
+#timer{
+    font-family: monospace;
+}

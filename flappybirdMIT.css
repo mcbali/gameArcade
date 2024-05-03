@@ -1,0 +1,173 @@
+/*
+  Flappy Bird Game
+  Adapted from code by Author: assebc on GitHub
+  GitHub Repository: https://github.com/assebc/flappy-bird/tree/main/assets
+  Licensed under the MIT License
+  */
+
+body {
+    background-color: #73c8a9;
+    font-family: 'Press Start 2P', cursive;
+    background-image: linear-gradient(to right, #73c8a9, #373b44);
+  }
+  
+  #game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  canvas {
+    border: 5px solid #2e2e2e;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin-bottom: 12px;
+  }
+  
+  .backdrop-blur {
+    filter: blur(5px);
+  }
+  
+  #end-menu {
+    /* we will toggle then the display of the end-menu */
+    display: none;
+    margin: 50px auto;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1000;
+  }
+  
+  #score-display {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+  }
+  
+  button {
+    background-color: #2e2e2e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+  }
+  
+  button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+/* my css */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1541474583361-bc9527eb46d6?q=80&w=2657&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+nav li{
+    height: 77px; /* same height as home page header */
+    min-width: 200px;
+}
+nav a{
+    display: flex;
+    height: 100%;
+    padding: 0 60px;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+}
+nav li:first-child{
+    color: black;
+    font-family: "press start 2p", sans-serif;
+    font-size: larger;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%);
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: lightgray;
+    backdrop-filter: blur(25px);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 40%;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px; 
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 170, 0);
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: white;
+    margin-top: 20px;
+    font-family: "press start 2p";
+}

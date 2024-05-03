@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href = "home.html">GAME ARCADE</a></li>
+            <li onclick=showSideBar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class = "sidebar">
+            <li onclick=closeSideBar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href = "#"></a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "controls.html">Controls</a></li>
+    </nav>
+    <div class="games-container">
+        <div class="game">
+            <a href="tic-tac-toe.html"><img src="assets/tic-tac-toe.jpg" class="game-image"></a>
+            <a href="tic-tac-toe.html"><h3>Tic Tac Toe</h3></a>
+        </div>
+        <div class="game">
+            <a href="memoryMatch.html"><img src="assets/memory.jpg" class="game-image"></a>
+            <a href="memoryMatch.html"><h3>Memory Match</h3></a>
+        </div>
+        <div class="game">
+            <a href="snake.html"><img src="assets/snake.png" class="game-image"></a>
+            <a href="snake.html"><h3>Snake</h3></a>
+        </div>
+        <div class="game">
+            <a href="flappybirdMIT.html"><img src="assets/flappybird.jpg" class="game-image"></a>
+            <a href="flappybirdMIT.html"><h3>Flappy Bird</h3></a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mc Rhigor Balingit</p>
+    </footer>
+    <script src = "navigation.js"></script>
+</body>
+
+
+</html>

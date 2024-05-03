@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controls</title>
+    <link rel="stylesheet" href="control.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href = "home.html">GAME ARCADE</a></li>
+            <li onclick=showSideBar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class = "sidebar">
+            <li onclick=closeSideBar()><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href = "#"></a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "controls.html">Controls</a></li>
+            <li><a href = "tic-tac-toe.html">Tic-Tac-Toe</a></li>
+            <li><a href = "memoryMatch.html">Memory Match</a></li>
+            <li><a href = "snake.html">Snake</a></li>
+            <li><a href = "flappybirdMIT.html">Flappy Bird</a></li>
+    </nav>
+
+    <div class="games-container">
+        <div class="game">
+            <img src="assets/tic-tac-toe.jpg" class="game-image">
+            <h3 id = "title">Tic Tac Toe</h3>
+            <p>Tic-tac-toe is a classic paper-and-pencil game played between two opponents on a grid of 3x3 squares. How to Play: Players take turns marking an empty square with their symbols: "X" for one player and "O" for the other, until one player achieves a row of three of their symbols horizontally, vertically, or diagonally, or until all squares are filled without a winner, resulting in a draw. Mark an empty square by clicking!</p>
+        </div>
+        <div class="game">
+            <img src="assets/memory.jpg" class="game-image">
+            <h3 id = "title">Memory Match</h3>
+            <p>Memory Match is a simple game where you challenge your memorization skills with different levels of varying difficulty. How To Play: Click two squares per turn to reveal the hidden fruits. If you successfully match a pair, you can keep the fruit! Win by matching all pairs of fruit. Compete yourself by trying to win in as fast of a time that you can accomplish!.</p>
+        </div>
+        <div class="game">
+            <img src="assets/snake.png" class="game-image">
+            <h3 id = "title">Snake</h3>
+            <p>Snake is a classic retro arcade game where you must slither towards the apples to grow and increase your score! Avoid hitting the walls and eating your own tail. How to Play: Use wasd keys to control the direction of your snake's movement.</p>
+        </div>
+        <div class="game">
+            <img src="assets/flappybird.jpg" class="game-image">
+            <h3 id = "title">Flappy Bird</h3>
+            <p>Flappy Bird is a simple yet addictive game where the objective is to achieve the highest score possible by surviving as long as possible by remaining airborne without hitting any obstacles. How to Play: Click to flap upwards. </p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Mc Rhigor Balingit</p>
+    </footer>
+
+    <script src = "navigation.js"></script>
+</body>
+</html>
